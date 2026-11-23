@@ -151,14 +151,13 @@ flowchart LR
 
 ## 📺 Watch it work — real output, made with this system
 
-Don't take the README's word for it. The video below is a
-**finished video this workflow produced for a real channel** —
-moments selected, cut, packaged, and thumbnailed the way this repo
-does it. Click the thumbnail to watch it, live on YouTube. Under it
-sits a second real thumbnail this system produced. Both stills are
-real frames from the channels' own footage, graded and typeset by
-`pipeline/thumbnail.py`. No stock, no AI key art, no invented
-results.
+Don't take the README's word for it. These are **finished videos
+this workflow produced for real channels** — one gaming, one
+bodycam — moments selected, cut, packaged, and thumbnailed the way
+this repo does it. Click a thumbnail to watch the actual video,
+live on YouTube. Both stills are real frames from the channels' own
+footage, graded and typeset by `pipeline/thumbnail.py`. No stock,
+no AI key art, no invented results.
 
 <table>
   <tr>
@@ -169,8 +168,8 @@ results.
   </tr>
   <tr>
     <td colspan="2">
-      <img src="assets/examples/thumb-bodydash-911.svg" alt="Real thumbnail produced by this system: 'He Called 911 Himself' — bodycam long-form, Body &amp; Dash channel" width="50%"><br>
-      <strong>“He Called 911 Himself”</strong> — built with this system for the <a href="https://www.youtube.com/@BodyDashFootage">Body &amp; Dash</a> bodycam channel's first long-form video, from a real frame of publicly released footage.
+      <a href="https://youtu.be/90_rYu_Us54"><img src="assets/examples/thumb-bodydash-911.svg" alt="Real thumbnail produced by this system: 'He Called 911 Himself' — bodycam long-form, Body &amp; Dash channel" width="50%"></a><br>
+      <strong>▶ “He Called 911 Himself”</strong> — made with this workflow and live on the <a href="https://www.youtube.com/@BodyDashFootage">Body &amp; Dash</a> bodycam channel — its first long-form video, cut from publicly released footage. (Thumbnail shown here is the one this system produced for it.) Click to watch.
     </td>
   </tr>
 </table>
