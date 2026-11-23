@@ -75,21 +75,32 @@ python3 -m pipeline.produce compilation config/my-job.json   # one long video, b
 
 ```mermaid
 flowchart LR
-    A["🎯 Niche preset<br/>config/niches/ — 28 built in<br/>or your custom config"] --> B["📹 Source footage<br/>you own or have rights to<br/>supplied locally, never downloaded"]
-    B --> C["1 · SELECT<br/>score /10 — ship only 8+"]
+    A["1 · PICK NICHE<br/>🎯 Niche preset<br/>config/niches/ — 28 built in<br/>or your custom config"] --> B["2 · SOURCE<br/>📹 Source footage<br/>you own or have rights to<br/>supplied locally, never downloaded"]
+    B --> C["3 · SELECT<br/>score /10 — ship only 8+"]
     C -->|below 8 or rejected type| X["❌ Dropped<br/>an empty slot beats a weak video"]
-    C -->|8+| P["2 · PRODUCE<br/>cut at the timestamps · vertical 9:16<br/>burned captions · compilations, best clip last"]
-    P --> D["3 · PACKAGE<br/>curiosity-gap titles · hook-first<br/>description · tags to ~490–500 chars"]
-    D --> E["4 · THUMBNAIL<br/>real frame from your video<br/>grade + bold display text"]
-    E --> F{"5 · QC GATE<br/>every check must pass"}
+    C -->|8+| P["4 · PRODUCE<br/>cut at the timestamps · vertical 9:16<br/>burned captions · compilations, best clip last"]
+    P --> D["5 · PACKAGE<br/>curiosity-gap titles · hook-first<br/>description · tags to ~490–500 chars"]
+    D --> E["6 · THUMBNAIL<br/>real frame from your video<br/>grade + bold display text"]
+    E --> F{"7 · QC GATE<br/>every check must pass"}
     F -->|fail| G["🔧 Fix it — or drop it<br/>no override"]
     G --> C
-    F -->|pass| H["6 · YOU PUBLISH<br/>upload in YouTube Studio<br/>read back the saved fields"]
+    F -->|pass| H["8 · YOU PUBLISH<br/>upload in YouTube Studio<br/>read back the saved fields"]
 ```
 
-## 🎯 The six stages
+## 🎯 The eight stages
 
-1. **Select** (`pipeline/select.py`) — candidate moments are scored on
+1. **Pick niche** (`config/niches/`) — start from the built-in
+   niche library: 28 presets in `config/niches/` (catalog:
+   `config/niches/INDEX.md`), each with its winning types, reject
+   list, tag seeds, sources, and cautions — or write a custom niche
+   from `config/niche.example.yaml`. The preset you pick drives
+   every stage after this one.
+2. **Source** — gather the footage for this niche the way its
+   preset's `sources` field describes: footage you own or have the
+   rights to use, supplied as local files. The pipeline never
+   downloads, scrapes, or rips footage from anywhere — if it isn't
+   already on your machine with rights cleared, stop here.
+3. **Select** (`pipeline/select.py`) — candidate moments are scored on
    five questions (0–2 each, /10): winning moment type, hook in the
    first frame, title curiosity without spoiling, would a stranger
    finish it, better than the channel average. Ship only at 8+.
@@ -99,7 +110,7 @@ flowchart LR
    <img src="assets/illustration-winner-picker.svg" alt="Illustration of the winner picker scorecard: five questions scored 0–2, example total 9/10, ship it" width="560">
 
    *Illustration of the scorecard every candidate moment faces.*
-2. **Produce** (`pipeline/produce.py`) — the stage that makes the
+4. **Produce** (`pipeline/produce.py`) — the stage that makes the
    actual videos, with ffmpeg, from the footage you supply locally:
    frame-accurate **cuts** at the winners' timestamps; vertical
    **9:16 formatting** for Shorts (blur-pad by default, crop when the
@@ -117,7 +128,7 @@ flowchart LR
 
    Produce never downloads footage and never uploads anything — it
    reads your files and writes finished videos. That's it.
-3. **Package** (`pipeline/seo.py`) — a full metadata pack per video:
+5. **Package** (`pipeline/seo.py`) — a full metadata pack per video:
    curiosity-gap title options, a description that opens with a hook
    line and a subscribe line (then body, steps for how-to/secret
    videos, source credit, disclaimer, hashtags), and tags filled to
@@ -127,16 +138,16 @@ flowchart LR
    <img src="assets/illustration-seo-pack.svg" alt="Illustration of the SEO pack description structure: hook line, subscribe line, body, credit and disclaimer, hashtags, and a tag bar filled to about 490–500 characters" width="560">
 
    *Illustration of the pack structure — the same skeleton on every video.*
-4. **Thumbnail** (`pipeline/thumbnail.py`) — a **real frame** from
+6. **Thumbnail** (`pipeline/thumbnail.py`) — a **real frame** from
    your own video, pulled with ffmpeg, given a saturated grade and
    bold outlined display text. Text is checked against a safe zone
    and for legibility at feed size. No AI key art, no stock photos.
-5. **QC** (`pipeline/qc.py`) — the pre-publish gate. Score, title,
+7. **QC** (`pipeline/qc.py`) — the pre-publish gate. Score, title,
    description structure, tag fill, thumbnail checks: **every check
    must pass**, or the item is fixed or dropped. No override.
-6. **Publish** — a human step, on purpose. You upload in YouTube
+8. **Publish** — a human step, on purpose. You upload in YouTube
    Studio with the pack beside you, then read back the saved fields
-   to confirm they match. (See `SKILL.md`, step 6.)
+   to confirm they match. (See `SKILL.md`, step 8.)
 
 ## 📺 Watch it work — real videos, made with this system
 
@@ -277,7 +288,7 @@ niche = load_preset("bodycam-police")     # or your tuned config file
 job = load_job("config/my-job.json")      # your footage + winning moments
 produce_shorts(job)                       # cut, format, caption — real videos
 # ...build the pack, build the thumbnail, run QC.
-# Publish by hand in YouTube Studio — see SKILL.md, step 6.
+# Publish by hand in YouTube Studio — see SKILL.md, step 8.
 ```
 
 Full walkthrough for both routes: [INSTALL.md](INSTALL.md).

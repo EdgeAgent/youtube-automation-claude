@@ -24,11 +24,11 @@ agent that reads skill files):
    of 28 presets in `config/niches/` (or `config/niche.example.yaml`
    for a custom niche), studying the top videos in your niche for
    the tag set.
-5. From there it runs the pipeline per video: select → produce →
-   package → thumbnail → QC. Production happens on your machine,
-   from footage you supply. You do the final upload in YouTube
-   Studio; the agent prepares everything and verifies the result
-   with you.
+5. From there it runs the pipeline per video: pick niche → source →
+   select → produce → package → thumbnail → QC → publish.
+   Production happens on your machine, from footage you supply. You
+   do the final upload in YouTube Studio; the agent prepares
+   everything and verifies the result with you.
 
 ## Path B — Plain CLI
 
@@ -68,7 +68,7 @@ niche = load_niche_config("config/my-niche.yaml")   # or load_preset("bodycam-po
 job = load_job("config/my-job.json")
 produce_shorts(job)          # cut + vertical-format + caption every winner
 # ...build the pack, build the thumbnail, run QC.
-# Publish by hand in YouTube Studio — see SKILL.md, step 6.
+# Publish by hand in YouTube Studio — see SKILL.md, step 8.
 ```
 
 ## What is NOT installed
@@ -76,6 +76,6 @@ produce_shorts(job)          # cut + vertical-format + caption every winner
 Nothing here uploads to YouTube, logs into your account, or calls the
 YouTube API — and nothing downloads footage either; production works
 only on files you supply. Publishing is a deliberate human step
-(SKILL.md step 6). That is a design choice, not a missing feature:
+(SKILL.md step 8). That is a design choice, not a missing feature:
 the pipeline's job is that everything you paste into Studio is
 already produced, packaged, and QC'd.

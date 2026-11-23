@@ -41,7 +41,21 @@ strategy; this file is the procedure.
 
 ## The pipeline (every video, in order)
 
-### 1. Select — `pipeline/select.py`
+### 1. Pick niche — `config/niches/`
+Work from the niche chosen in Setup: one of the 28 built-in presets
+in `config/niches/` (catalog: `config/niches/INDEX.md`), or the
+user's custom config. Its winning types, reject list, ship bar,
+tag seeds, sources, and cautions drive every stage below — do not
+run a video outside a picked niche.
+
+### 2. Source
+Gather the source footage the way the preset's `sources` field
+describes: footage the user owns or has the rights to use, already
+supplied as local files (see the preset's `rights_note`). Never
+download, scrape, or rip footage from any platform — if the footage
+isn't on the user's machine with rights cleared, stop here.
+
+### 3. Select — `pipeline/select.py`
 Watch the source footage and list candidate moments. Score each one
 with `score_candidate` (five questions, 0–2 each, /10):
 
@@ -55,7 +69,7 @@ Ship only at the config's `min_ship_score` (default 8). Categories on
 the reject list are hard-rejected at any score. **An empty slot beats
 a weak video — never pad a run.**
 
-### 2. Produce — `pipeline/produce.py`
+### 4. Produce — `pipeline/produce.py`
 Make the actual videos from the footage the user supplies locally.
 Write a produce job (see `config/produce.example.json`): the source
 file, the winning moments with their timestamps and scores, format,
@@ -77,30 +91,30 @@ never uploads anything; if the footage isn't already on the user's
 machine with rights cleared (check the preset's `sources` and
 `rights_note`), stop.
 
-### 3. Package — `pipeline/seo.py`
+### 5. Package — `pipeline/seo.py`
 Build the metadata pack with `build_pack` for each produced video:
 
 - **Title**: curiosity up front, resolution withheld. If the title
-  isn't clickable, the moment is wrong — go back to step 1.
+  isn't clickable, the moment is wrong — go back to step 3.
 - **Description**: hook line first (never a repeat of the title),
   subscribe line second, body, exact steps for secret/how-to videos,
   source credit, disclaimer, hashtags.
 - **Tags**: video-specific tags first, then the niche canonical set,
   filled to ~490–500 characters, trimming generics from the end only.
 
-### 4. Thumbnail — `pipeline/thumbnail.py`
+### 6. Thumbnail — `pipeline/thumbnail.py`
 Extract the rawest REAL frame from the finished video
 (`extract_frame`) and treat it with `build_thumbnail`: saturated grade,
 big display text (2–4 words, not a repeat of the title), heavy outline.
 No AI-generated key art, no stock. The frame is a promise the video
 must keep.
 
-### 5. QC gate — `pipeline/qc.py`
+### 7. QC gate — `pipeline/qc.py`
 Run `run_qc` on the score, the pack, and the thumbnail. **Every check
 must pass.** A failure means fix the item or drop it — there is no
 override, and you never report a failed item as ready.
 
-### 6. Publish — HUMAN STEP
+### 8. Publish — HUMAN STEP
 Uploading happens in YouTube Studio, by the user (or with the user
 watching). Paste the pack, set the thumbnail, set the playlist, then
 READ BACK the saved fields and confirm they match the pack before
