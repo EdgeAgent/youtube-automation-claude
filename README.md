@@ -36,7 +36,12 @@ pipeline handles selection, packaging, thumbnails, and QC. Publishing
 stays a deliberate human step in YouTube Studio, verified by
 read-back.
 
-## Quickstart
+> **A note on the name:** it's **YouTube Automation *for Muse*** —
+> named for [Claude](https://claude.com), the AI assistant the skill
+> plugs into. It's not a cloud service and nothing runs on anyone's
+> servers: the whole system is this repo, on your machine.
+
+## ⚡ Quickstart
 
 ```bash
 git clone https://github.com/EdgeAgent/youtube-automation-claude.git
@@ -52,7 +57,7 @@ Then pick your path — full details in [INSTALL.md](INSTALL.md):
   `config/<your-niche>.yaml`, fill it in, and drive the modules in
   `pipeline/` from Python.
 
-## Workflow map
+## 🗺️ Workflow map
 
 ```mermaid
 flowchart LR
@@ -67,7 +72,7 @@ flowchart LR
     F -->|pass| H["5 · YOU PUBLISH<br/>upload in YouTube Studio<br/>read back the saved fields"]
 ```
 
-## The five stages
+## 🎯 The five stages
 
 1. **Select** (`pipeline/select.py`) — candidate moments are scored on
    five questions (0–2 each, /10): winning moment type, hook in the
@@ -75,12 +80,20 @@ flowchart LR
    finish it, better than the channel average. Ship only at 8+.
    Dead categories (menus, filler, no-payoff beats) are hard-rejected.
    *An empty slot beats a weak video.*
+
+   <img src="assets/illustration-winner-picker.svg" alt="Illustration of the winner picker scorecard: five questions scored 0–2, example total 9/10, ship it" width="560">
+
+   *Illustration of the scorecard every candidate moment faces.*
 2. **Package** (`pipeline/seo.py`) — a full metadata pack per video:
    curiosity-gap title options, a description that opens with a hook
    line and a subscribe line (then body, steps for how-to/secret
    videos, source credit, disclaimer, hashtags), and tags filled to
    ~490–500 characters — video-specific first, niche canonical set
    after, generics trimmed from the end.
+
+   <img src="assets/illustration-seo-pack.svg" alt="Illustration of the SEO pack description structure: hook line, subscribe line, body, credit and disclaimer, hashtags, and a tag bar filled to about 490–500 characters" width="560">
+
+   *Illustration of the pack structure — the same skeleton on every video.*
 3. **Thumbnail** (`pipeline/thumbnail.py`) — a **real frame** from
    your own video, pulled with ffmpeg, given a saturated grade and
    bold outlined display text. Text is checked against a safe zone
@@ -92,7 +105,44 @@ flowchart LR
    Studio with the pack beside you, then read back the saved fields
    to confirm they match. (See `SKILL.md`, step 5.)
 
-## What's in the repo
+## 🔥 What it makes — real output, no mockups
+
+These are **actual thumbnails this pipeline produced for real
+channels** — real frames from the channels' own videos, graded and
+typeset by `pipeline/thumbnail.py`, exactly the way the system ships
+them. No stock, no AI key art, no invented results.
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="https://youtu.be/-vxa0afUKDE"><img src="assets/examples/thumb-gtasix-compilation.svg" alt="Real thumbnail produced by this system: 'It Got Heated' — GTA 6 compilation, GTAsix channel" width="100%"></a><br>
+      <strong>“It Got Heated”</strong> — compilation thumbnail, live on the <a href="https://www.youtube.com/@GTAsix-b2k">GTAsix</a> gaming-clips channel.
+    </td>
+    <td width="50%">
+      <a href="https://youtu.be/WFWAh2Je5N4"><img src="assets/examples/thumb-gtasix-guns-out.svg" alt="Real thumbnail produced by this system: 'Guns Out' — GTA 6 trending moments, GTAsix channel" width="100%"></a><br>
+      <strong>“Guns Out”</strong> — long-form thumbnail, live on the same channel's trending-moments video.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="assets/examples/thumb-bodydash-911.svg" alt="Real thumbnail produced by this system: 'He Called 911 Himself' — bodycam long-form, Body &amp; Dash channel" width="50%"><br>
+      <strong>“He Called 911 Himself”</strong> — built with this system for the <a href="https://www.youtube.com/@BodyDashFootage">Body &amp; Dash</a> bodycam channel's first long-form video, from a real frame of publicly released footage.
+    </td>
+  </tr>
+</table>
+
+## 📈 The playbook behind it
+
+[`docs/packaging-playbook.md`](docs/packaging-playbook.md) is the
+strategy the code enforces: packaging first, outlier theory, upload
+less and package harder, title craft — and judging everything by the
+three metrics that tell the truth, not vanity counts.
+
+<img src="assets/illustration-metrics.svg" alt="Illustration of the three metrics that matter: APV, AVD, and impressions" width="560">
+
+*Illustration. The playbook's scoreboard: retention and reach, not raw views.*
+
+## 📦 What's in the repo
 
 | Path | What it is |
 |---|---|
@@ -127,7 +177,7 @@ template; `config/examples/` ships three worked examples:
 Your niche can be anything else: cooking disasters, woodworking
 saves, kayak fishing, local history — if it has moments, it fits.
 
-## Install
+## 🚀 Install
 
 **Route A — Claude skill (recommended).** Clone the repo, open your
 agent in the repo folder, point it at `SKILL.md`, and say your niche.
@@ -161,7 +211,7 @@ Full walkthrough for both routes: [INSTALL.md](INSTALL.md).
 - Python 3.10+, Pillow, ffmpeg. Nothing else. (pytest is optional,
   for the test suite: `python3 -m pytest`.)
 
-## Honest limits
+## ⚠️ Honest limits
 
 - **Copyright & reused content.** YouTube's reused-content policy is
   real and it ends channels. Use footage you own or have rights to,

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="430" viewBox="0 0 720 430" role="img" aria-label="Illustration of an SEO pack description structure">
+  <rect width="720" height="430" rx="14" fill="#0d1117"/>
+  <rect width="720" height="430" rx="14" fill="none" stroke="#2b3444"/>
+  <text x="36" y="52" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#ffffff">SEO PACK &#8212; DESCRIPTION ANATOMY</text>
+  <text x="36" y="78" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b95a5">Every video ships with the same proven structure.</text>
+
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+    <g transform="translate(36,100)">
+      <rect width="648" height="40" rx="8" fill="#1b2230"/><rect width="5" height="40" fill="#ff0033"/>
+      <text x="20" y="26" font-size="16" fill="#dfe5ee"><tspan font-weight="700" fill="#ffffff">1 &#183; Hook line</tspan> &#8212; never a repeat of the title</text>
+    </g>
+    <g transform="translate(36,150)">
+      <rect width="648" height="40" rx="8" fill="#1b2230"/><rect width="5" height="40" fill="#ff4d5e"/>
+      <text x="20" y="26" font-size="16" fill="#dfe5ee"><tspan font-weight="700" fill="#ffffff">2 &#183; Subscribe line</tspan> &#8212; second line, every time</text>
+    </g>
+    <g transform="translate(36,200)">
+      <rect width="648" height="40" rx="8" fill="#1b2230"/><rect width="5" height="40" fill="#3a4356"/>
+      <text x="20" y="26" font-size="16" fill="#dfe5ee"><tspan font-weight="700" fill="#ffffff">3 &#183; Body</tspan> &#8212; context, plus exact steps for secret / how-to videos</text>
+    </g>
+    <g transform="translate(36,250)">
+      <rect width="648" height="40" rx="8" fill="#1b2230"/><rect width="5" height="40" fill="#3a4356"/>
+      <text x="20" y="26" font-size="16" fill="#dfe5ee"><tspan font-weight="700" fill="#ffffff">4 &#183; Source credit + disclaimer</tspan></text>
+    </g>
+    <g transform="translate(36,300)">
+      <rect width="648" height="40" rx="8" fill="#1b2230"/><rect width="5" height="40" fill="#3a4356"/>
+      <text x="20" y="26" font-size="16" fill="#dfe5ee"><tspan font-weight="700" fill="#ffffff">5 &#183; Hashtags</tspan> &#8212; 3&#8211;5, from the niche config</text>
+    </g>
+  </g>
+
+  <text x="36" y="382" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b95a5">TAGS &#8212; video-specific first, canonical set after, generics trimmed</text>
+  <rect x="36" y="394" width="648" height="14" rx="7" fill="#232a36"/>
+  <rect x="36" y="394" width="636" height="14" rx="7" fill="#2ea043"/>
+  <text x="684" y="382" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">~490&#8211;500 chars</text>
+</svg>

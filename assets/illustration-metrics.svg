@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="196" viewBox="0 0 720 196" role="img" aria-label="Illustration of the three metrics that matter: APV, AVD, impressions">
+  <rect width="720" height="196" rx="14" fill="#0d1117"/>
+  <rect width="720" height="196" rx="14" fill="none" stroke="#2b3444"/>
+  <text x="36" y="46" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">THE METRICS THAT ACTUALLY MATTER</text>
+
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+    <g transform="translate(36,66)">
+      <rect width="204" height="100" rx="10" fill="#1b2230"/>
+      <text x="20" y="40" font-size="24" font-weight="700" fill="#ff4d5e">APV</text>
+      <text x="20" y="66" font-size="13.5" fill="#aeb6c2">Average percentage</text>
+      <text x="20" y="85" font-size="13.5" fill="#aeb6c2">viewed &#8212; retention truth</text>
+    </g>
+    <g transform="translate(258,66)">
+      <rect width="204" height="100" rx="10" fill="#1b2230"/>
+      <text x="20" y="40" font-size="24" font-weight="700" fill="#ff4d5e">AVD</text>
+      <text x="20" y="66" font-size="13.5" fill="#aeb6c2">Average view duration</text>
+      <text x="20" y="85" font-size="13.5" fill="#aeb6c2">&#8212; the compounding metric</text>
+    </g>
+    <g transform="translate(480,66)">
+      <rect width="204" height="100" rx="10" fill="#1b2230"/>
+      <text x="20" y="40" font-size="24" font-weight="700" fill="#ff4d5e">IMPRESSIONS</text>
+      <text x="20" y="66" font-size="13.5" fill="#aeb6c2">How often YouTube</text>
+      <text x="20" y="85" font-size="13.5" fill="#aeb6c2">offers the video at all</text>
+    </g>
+  </g>
+</svg>

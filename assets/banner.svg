@@ -1,69 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="YouTube Automation for Muse — packaging-first pipeline for any niche">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="YouTube Automation for Muse — packaging first. Weak clips die here.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0e14"/>
-      <stop offset="0.55" stop-color="#12161f"/>
-      <stop offset="1" stop-color="#1a0f14"/>
+      <stop offset="0" stop-color="#05060a"/>
+      <stop offset="0.6" stop-color="#0d0a12"/>
+      <stop offset="1" stop-color="#23060d"/>
     </linearGradient>
-    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ff3b30"/>
-      <stop offset="1" stop-color="#d90429"/>
-    </linearGradient>
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff0033" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ff0033" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="0.22" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#ff0033" stop-opacity="0.34"/>
       <stop offset="1" stop-color="#ff0033" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2d3f"/>
+      <stop offset="1" stop-color="#c8001f"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff0033"/>
+      <stop offset="0.55" stop-color="#ff7a18"/>
+      <stop offset="1" stop-color="#ffd60a"/>
     </linearGradient>
   </defs>
 
-  <rect width="1280" height="340" fill="url(#bg)"/>
-  <rect x="0" y="248" width="1280" height="1.5" fill="url(#fade)"/>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#glow)"/>
 
-  <!-- subtle grid dots, right side -->
-  <g fill="#ffffff" opacity="0.05">
-    <circle cx="1080" cy="60" r="3"/><circle cx="1140" cy="60" r="3"/><circle cx="1200" cy="60" r="3"/>
-    <circle cx="1080" cy="110" r="3"/><circle cx="1140" cy="110" r="3"/><circle cx="1200" cy="110" r="3"/>
-    <circle cx="1080" cy="160" r="3"/><circle cx="1140" cy="160" r="3"/><circle cx="1200" cy="160" r="3"/>
+  <!-- energy rays, top right -->
+  <g stroke="#ff0033" stroke-width="3" opacity="0.20" stroke-linecap="round">
+    <line x1="1152" y1="18" x2="1178" y2="52"/>
+    <line x1="1206" y1="34" x2="1218" y2="74"/>
+    <line x1="1104" y1="8" x2="1118" y2="44"/>
+    <line x1="1248" y1="70" x2="1248" y2="108"/>
+  </g>
+  <!-- halftone dots, bottom right -->
+  <g fill="#ffffff" opacity="0.06">
+    <circle cx="1130" cy="238" r="4"/><circle cx="1178" cy="238" r="4"/><circle cx="1226" cy="238" r="4"/>
+    <circle cx="1130" cy="272" r="4"/><circle cx="1178" cy="272" r="4"/><circle cx="1226" cy="272" r="4"/>
+    <circle cx="1130" cy="306" r="4"/><circle cx="1178" cy="306" r="4"/><circle cx="1226" cy="306" r="4"/>
   </g>
 
-  <!-- play button mark -->
-  <g transform="translate(84,86)">
-    <rect width="168" height="118" rx="26" fill="url(#red)"/>
-    <path d="M70 36 L112 59 L70 82 Z" fill="#ffffff"/>
+  <!-- play button mark, bigger -->
+  <g transform="translate(72,64)">
+    <rect width="196" height="138" rx="30" fill="url(#red)"/>
+    <rect width="196" height="138" rx="30" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+    <path d="M82 40 L132 69 L82 98 Z" fill="#ffffff"/>
   </g>
 
-  <!-- title -->
-  <text x="288" y="128" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="57" font-weight="700" fill="#ffffff" letter-spacing="-0.5">YouTube Automation</text>
-  <text x="288" y="182" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="600" fill="#ff4d5e">for Muse</text>
+  <!-- headline -->
+  <text x="304" y="118" font-family="'Arial Black', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="900" fill="#ffffff" letter-spacing="-1">YOUTUBE AUTOMATION</text>
+  <g transform="translate(306,136)">
+    <rect width="342" height="58" rx="8" fill="#ff0033" transform="skewX(-6)"/>
+    <text x="18" y="43" font-family="'Arial Black', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#ffffff" letter-spacing="1">FOR CLAUDE</text>
+  </g>
+  <text x="676" y="178" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#aeb6c2">the packaging-first pipeline for ANY niche</text>
 
-  <!-- tagline -->
-  <text x="288" y="226" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" fill="#aeb6c2">Packaging-first pipeline for any niche &#8212; packaging is designed before the video exists.</text>
+  <!-- punchy tagline -->
+  <text x="306" y="240" font-family="'Arial Black', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="900" fill="#ffd60a" letter-spacing="0.5">PACKAGING FIRST. WEAK CLIPS DIE HERE.</text>
 
-  <!-- pipeline stages -->
-  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="600">
-    <g transform="translate(84,272)">
-      <rect width="128" height="34" rx="17" fill="none" stroke="#3a4356"/>
-      <text x="64" y="22" text-anchor="middle" fill="#dfe5ee">1 &#183; SELECT</text>
+  <!-- gradient rule -->
+  <rect x="0" y="266" width="1280" height="4" fill="url(#bar)"/>
+
+  <!-- pipeline stages, bigger -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700">
+    <g transform="translate(72,288)">
+      <rect width="150" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="75" y="28" text-anchor="middle" fill="#ffffff">1 &#183; SELECT</text>
     </g>
-    <path d="M222 288 L229 294 L222 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
-    <g transform="translate(248,272)">
-      <rect width="140" height="34" rx="17" fill="none" stroke="#3a4356"/>
-      <text x="70" y="22" text-anchor="middle" fill="#dfe5ee">2 &#183; PACKAGE</text>
+    <path d="M234 302 L243 309 L234 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(256,288)">
+      <rect width="164" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="82" y="28" text-anchor="middle" fill="#ffffff">2 &#183; PACKAGE</text>
     </g>
-    <path d="M398 288 L405 294 L398 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
-    <g transform="translate(424,272)">
-      <rect width="164" height="34" rx="17" fill="none" stroke="#3a4356"/>
-      <text x="82" y="22" text-anchor="middle" fill="#dfe5ee">3 &#183; THUMBNAIL</text>
+    <path d="M432 302 L441 309 L432 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(454,288)">
+      <rect width="188" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="94" y="28" text-anchor="middle" fill="#ffffff">3 &#183; THUMBNAIL</text>
     </g>
-    <path d="M598 288 L605 294 L598 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
-    <g transform="translate(624,272)">
-      <rect width="124" height="34" rx="17" fill="none" stroke="#3a4356"/>
-      <text x="62" y="22" text-anchor="middle" fill="#dfe5ee">4 &#183; QC GATE</text>
+    <path d="M654 302 L663 309 L654 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(676,288)">
+      <rect width="150" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="75" y="28" text-anchor="middle" fill="#ffffff">4 &#183; QC GATE</text>
     </g>
-    <path d="M758 288 L765 294 L758 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
-    <g transform="translate(784,272)">
-      <rect width="196" height="34" rx="17" fill="#ff0033"/>
-      <text x="98" y="22" text-anchor="middle" fill="#ffffff">5 &#183; YOU PUBLISH</text>
+    <path d="M838 302 L847 309 L838 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(860,288)">
+      <rect width="228" height="42" rx="21" fill="#ff0033"/>
+      <text x="114" y="28" text-anchor="middle" fill="#ffffff">5 &#183; YOU PUBLISH</text>
     </g>
   </g>
 </svg>
