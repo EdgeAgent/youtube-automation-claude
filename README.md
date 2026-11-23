@@ -149,25 +149,22 @@ flowchart LR
    Studio with the pack beside you, then read back the saved fields
    to confirm they match. (See `SKILL.md`, step 8.)
 
-## 📺 Watch it work — real videos, made with this system
+## 📺 Watch it work — real output, made with this system
 
-Don't take the README's word for it. These are **finished videos
-this workflow produced for a real channel** — moments selected,
-cut, packaged, and thumbnailed the way this repo does it. Click a
-thumbnail to watch the actual video, live on YouTube. The stills are
-the videos' real thumbnails: real frames from the channel's own
-footage, graded and typeset by `pipeline/thumbnail.py`. No stock,
-no AI key art, no invented results.
+Don't take the README's word for it. The video below is a
+**finished video this workflow produced for a real channel** —
+moments selected, cut, packaged, and thumbnailed the way this repo
+does it. Click the thumbnail to watch it, live on YouTube. Under it
+sits a second real thumbnail this system produced. Both stills are
+real frames from the channels' own footage, graded and typeset by
+`pipeline/thumbnail.py`. No stock, no AI key art, no invented
+results.
 
 <table>
   <tr>
-    <td width="50%">
-      <a href="https://youtu.be/-vxa0afUKDE"><img src="assets/examples/thumb-gtasix-compilation.svg" alt="Real thumbnail produced by this system: 'It Got Heated' — GTA 6 compilation, GTAsix channel" width="100%"></a><br>
-      <strong>▶ “It Got Heated”</strong> — GTA 6 Compilation #1, made with this workflow and live on the <a href="https://www.youtube.com/@GTAsix-b2k">GTAsix</a> channel. Click to watch.
-    </td>
-    <td width="50%">
-      <a href="https://youtu.be/WFWAh2Je5N4"><img src="assets/examples/thumb-gtasix-guns-out.svg" alt="Real thumbnail produced by this system: 'Guns Out' — GTA 6 trending moments, GTAsix channel" width="100%"></a><br>
-      <strong>▶ “Guns Out”</strong> — the Trending Moments long-form, made with this workflow and live on the same channel. Click to watch.
+    <td colspan="2">
+      <a href="https://youtu.be/WFWAh2Je5N4"><img src="assets/examples/thumb-gtasix-guns-out.svg" alt="Real thumbnail produced by this system: 'Guns Out' — GTA 6 trending moments, GTAsix channel" width="50%"></a><br>
+      <strong>▶ “Guns Out”</strong> — the Trending Moments long-form, made with this workflow and live on the <a href="https://www.youtube.com/@GTAsix-b2k">GTAsix</a> channel. Click to watch.
     </td>
   </tr>
   <tr>
