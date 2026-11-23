@@ -90,37 +90,22 @@
       <text x="96" y="28" text-anchor="middle" fill="#ffffff">6 &#183; YOU PUBLISH</text>
     </g>
   </g>
-  <!-- Claude mascot perched on a play button, bottom right -->
+  <!-- Clawd, the Claude Code mascot, perched on a play button, bottom right -->
   <g transform="translate(0,74)">
     <!-- play button -->
     <rect x="1148" y="208" width="104" height="56" rx="15" fill="url(#red)"/>
     <rect x="1148" y="208" width="104" height="56" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
     <path d="M1192 222 L1214 236 L1192 250 Z" fill="#ffffff"/>
-    <!-- waving arm (tucks behind the spark) -->
-    <path d="M1236 168 Q1254 158 1252 142" fill="none" stroke="#d97757" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="1252" cy="139" r="6.5" fill="#eda273"/>
-    <!-- the Claude spark character -->
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(0 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(30 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(60 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(90 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(120 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(150 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(180 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(210 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(240 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(270 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(300 1200 168)"/>
-    <ellipse cx="1200" cy="145" rx="7" ry="22" fill="#d97757" transform="rotate(330 1200 168)"/>
-    <circle cx="1200" cy="168" r="19" fill="#d97757"/>
-    <!-- little legs dangling over the front of the button -->
-    <ellipse cx="1185" cy="215" rx="8" ry="5.5" fill="#b85a36"/>
-    <ellipse cx="1215" cy="215" rx="8" ry="5.5" fill="#b85a36"/>
-    <!-- face -->
-    <circle cx="1193" cy="165" r="3.2" fill="#3a2318"/>
-    <circle cx="1207" cy="165" r="3.2" fill="#3a2318"/>
-    <path d="M1194 173 Q1200 178 1206 173" fill="none" stroke="#3a2318" stroke-width="2.2" stroke-linecap="round"/>
-    <ellipse cx="1184" cy="172" rx="4" ry="2.4" fill="#ffb08a" opacity="0.9"/>
-    <ellipse cx="1216" cy="172" rx="4" ry="2.4" fill="#ffb08a" opacity="0.9"/>
+    <!-- stubby arms (tuck behind the body; right one raised) -->
+    <ellipse cx="1154" cy="188" rx="8.5" ry="15" fill="#d97757" transform="rotate(18 1154 188)"/>
+    <ellipse cx="1246" cy="181" rx="8.5" ry="15" fill="#d97757" transform="rotate(-28 1246 181)"/>
+    <!-- blocky body: squat rounded square, wider than tall, sitting on the button -->
+    <rect x="1158" y="146" width="84" height="64" rx="17" fill="#d97757"/>
+    <!-- short stubby feet dangling over the front edge of the button -->
+    <ellipse cx="1177" cy="217" rx="13" ry="8" fill="#d97757"/>
+    <ellipse cx="1223" cy="217" rx="13" ry="8" fill="#d97757"/>
+    <!-- eyes: two black ovals, close together, set high, glancing to the side -->
+    <ellipse cx="1196" cy="167" rx="5" ry="8" fill="#201612"/>
+    <ellipse cx="1218" cy="167" rx="5" ry="8" fill="#201612"/>
   </g>
 </svg>
