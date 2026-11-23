@@ -1,0 +1,51 @@
+# ─── Niche config template ───────────────────────────────────────────────
+# Copy this file, rename it for your niche (e.g. config/my-niche.yaml),
+# and fill in every field. The pipeline reads these values at every stage.
+# Three worked examples live in config/examples/.
+
+# Your niche, in a few words. Used in titles and reports.
+niche: my niche name
+
+# The moment types that WIN in your niche (see docs/packaging-playbook.md).
+# The defaults below are the proven clip-niche winners — change them only
+# if your niche's outlier data says otherwise.
+winning_types:
+  - fail
+  - funny
+  - reaction
+  - secret
+
+# Categories that are hard-rejected, whatever their score. These are the
+# dead categories with no outlier track record in clip niches.
+reject_types:
+  - menu
+  - shopping
+  - inventory
+  - filler_travel
+  - cutscene_no_payoff
+
+# Ship bar: a candidate must score at least this out of 10.
+min_ship_score: 8
+
+# What you publish, and how often. Cadence is a promise to yourself —
+# fewer, better-packaged uploads beat daily filler.
+video_types:
+  - shorts
+  - compilations
+cadence: 3 shorts per week, 1 compilation per month
+
+# The second line of every description (the first line is the hook).
+subscribe_line: "🔔 SUBSCRIBE for daily videos — new uploads every single day! 🚀"
+
+# Your niche's canonical tag set: the tags that belong on (almost) every
+# video. Per-video tags go first, then these fill the list to ~490-500
+# characters. Build this list from the top videos in YOUR niche.
+canonical_tags:
+  - replace with your niche tags
+  - top searched terms in your niche
+  - your channel name
+
+# Hashtags appended to every description (3-5 is plenty).
+hashtags:
+  - yourniche
+  - shorts

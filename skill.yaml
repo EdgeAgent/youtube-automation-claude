@@ -1,0 +1,7 @@
+name: youtube_automation
+title: YouTube Automation for Muse
+description: A niche-agnostic, packaging-first YouTube pipeline an agent can run end to end — winner-only moment selection (self-score /10, ship at 8+), full SEO packs (curiosity-gap titles, hook-first descriptions, tags filled to ~490-500 chars), thumbnails built from real frames of the user's own video, and a pre-publish QC gate that refuses failing items. The user picks any niche; the skill generates their config from config/niche.example.yaml and runs each stage. Publishing is a human step in YouTube Studio, verified by read-back. Use when the user wants to start or run a YouTube channel with this repo, choose a niche, package a video, or audit a channel's packaging. Do NOT use for uploading or posting on the user's behalf, for footage the user has no rights to, or with any promise of views or monetization.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false

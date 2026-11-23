@@ -1,0 +1,42 @@
+# Example niche: faceless facts / listicle channel (original narration
+# over footage and images you own or have licensed).
+
+niche: faceless facts
+
+winning_types:
+  - shocking_fact
+  - countdown_reveal
+  - myth_busted
+  - secret
+
+reject_types:
+  - intro_filler
+  - sponsor_read
+  - recap
+  - slow_broll
+
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long
+cadence: 2 shorts per week, 1 long per week
+
+subscribe_line: "🔔 SUBSCRIBE for facts you won't believe — new videos every week! 🚀"
+
+canonical_tags:
+  - facts
+  - amazing facts
+  - did you know
+  - top 10 facts
+  - interesting facts
+  - facts you didnt know
+  - mind blowing facts
+  - countdown
+  - list video
+  - faceless channel
+
+hashtags:
+  - facts
+  - didyouknow
+  - shorts

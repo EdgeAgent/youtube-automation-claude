@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+
+# Working media — your footage and renders are yours, not the repo's
+media/
+renders/
+*.mp4
+*.mov
+*.mkv

@@ -1,0 +1,45 @@
+# Example niche: bodycam / public-records footage.
+# ONLY footage that was publicly released (official department channels,
+# public-records releases) and that you have the right to use. Blur faces
+# of bystanders, licence plates, and minors before publishing — see the
+# QC rules in SKILL.md.
+
+niche: bodycam footage
+
+winning_types:
+  - chase
+  - takedown
+  - k9_track
+  - unexpected
+
+reject_types:
+  - paperwork
+  - station_filler
+  - traffic_stop_no_outcome
+  - press_conference
+
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long
+cadence: 1 narrated long per day, shorts feeding it
+
+subscribe_line: "🔔 SUBSCRIBE for daily bodycam breakdowns — new footage every single day! 🚀"
+
+canonical_tags:
+  - bodycam
+  - police bodycam
+  - bodycam footage
+  - police chase
+  - bodycam takedown
+  - k9 bodycam
+  - dashcam
+  - police pursuit
+  - body camera
+  - real bodycam
+
+hashtags:
+  - bodycam
+  - police
+  - shorts

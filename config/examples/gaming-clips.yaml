@@ -1,0 +1,43 @@
+# Example niche: gaming clips (highlights from gameplay you recorded
+# yourself, or footage you have written permission to use).
+
+niche: gaming clips
+
+winning_types:
+  - fail
+  - funny
+  - reaction
+  - secret
+
+reject_types:
+  - menu
+  - shopping
+  - inventory
+  - filler_travel
+  - cutscene_no_payoff
+
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: 3 shorts per week, 1 ranked compilation per month
+
+subscribe_line: "🔔 SUBSCRIBE for DAILY gaming clips — new moments every single day! 🚀"
+
+canonical_tags:
+  - gaming clips
+  - funny gaming moments
+  - gaming fails
+  - epic gaming moments
+  - gaming highlights
+  - funny moments
+  - gaming secrets
+  - easter eggs
+  - gaming reaction
+  - best gaming clips
+
+hashtags:
+  - gaming
+  - shorts
+  - funny
