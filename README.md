@@ -161,14 +161,12 @@ no AI key art, no invented results.
 
 <table>
   <tr>
-    <td colspan="2">
-      <a href="https://youtu.be/WFWAh2Je5N4"><img src="assets/examples/thumb-gtasix-guns-out.svg" alt="Real thumbnail produced by this system: 'Guns Out' — GTA 6 trending moments, GTAsix channel" width="50%"></a><br>
+    <td width="50%">
+      <a href="https://youtu.be/WFWAh2Je5N4"><img src="assets/examples/thumb-gtasix-guns-out.svg" alt="Real thumbnail produced by this system: 'Guns Out' — GTA 6 trending moments, GTAsix channel" width="100%"></a><br>
       <strong>▶ “Guns Out”</strong> — the Trending Moments long-form, made with this workflow and live on the <a href="https://www.youtube.com/@GTAsix-b2k">GTAsix</a> channel. Click to watch.
     </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <a href="https://youtu.be/90_rYu_Us54"><img src="assets/examples/thumb-bodydash-911.svg" alt="Real thumbnail produced by this system: 'He Called 911 Himself' — bodycam long-form, Body &amp; Dash channel" width="50%"></a><br>
+    <td width="50%">
+      <a href="https://youtu.be/90_rYu_Us54"><img src="assets/examples/thumb-bodydash-911.svg" alt="Real thumbnail produced by this system: 'He Called 911 Himself' — bodycam long-form, Body &amp; Dash channel" width="100%"></a><br>
       <strong>▶ “He Called 911 Himself”</strong> — made with this workflow and live on the <a href="https://www.youtube.com/@BodyDashFootage">Body &amp; Dash</a> bodycam channel — its first long-form video, cut from publicly released footage. (Thumbnail shown here is the one this system produced for it.) Click to watch.
     </td>
   </tr>
