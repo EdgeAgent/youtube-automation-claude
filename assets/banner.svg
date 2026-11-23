@@ -85,4 +85,36 @@
       <text x="114" y="28" text-anchor="middle" fill="#ffffff">5 &#183; YOU PUBLISH</text>
     </g>
   </g>
+
+  <!-- Claude mascot perched on a play button, bottom right -->
+  <g transform="translate(0,74)">
+    <defs>
+      <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#eda273"/>
+        <stop offset="1" stop-color="#d97757"/>
+      </linearGradient>
+    </defs>
+    <!-- play button -->
+    <rect x="1148" y="208" width="104" height="56" rx="15" fill="url(#red)"/>
+    <rect x="1148" y="208" width="104" height="56" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+    <path d="M1192 222 L1214 236 L1192 250 Z" fill="#ffffff"/>
+    <!-- arms (shoulders tuck behind the body) -->
+    <path d="M1224 172 Q1240 160 1237 144" fill="none" stroke="#d97757" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="1237" cy="141" r="6.5" fill="#eda273"/>
+    <path d="M1176 176 Q1164 188 1168 200" fill="none" stroke="#d97757" stroke-width="7" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="1200" cy="180" rx="28" ry="26" fill="url(#clay)"/>
+    <ellipse cx="1200" cy="192" rx="15" ry="10" fill="#f6c79b" opacity="0.9"/>
+    <!-- feet dangling over the front of the button -->
+    <ellipse cx="1184" cy="213" rx="9" ry="6" fill="#b85a36"/>
+    <ellipse cx="1216" cy="213" rx="9" ry="6" fill="#b85a36"/>
+    <!-- face -->
+    <circle cx="1191" cy="176" r="3.4" fill="#33231a"/>
+    <circle cx="1209" cy="176" r="3.4" fill="#33231a"/>
+    <path d="M1194 185 Q1200 190 1206 185" fill="none" stroke="#33231a" stroke-width="2.2" stroke-linecap="round"/>
+    <ellipse cx="1181" cy="184" rx="4.5" ry="2.8" fill="#ff9d76" opacity="0.85"/>
+    <ellipse cx="1219" cy="184" rx="4.5" ry="2.8" fill="#ff9d76" opacity="0.85"/>
+    <!-- spark -->
+    <path d="M1164 128 L1167.5 137.5 L1177 141 L1167.5 144.5 L1164 154 L1160.5 144.5 L1151 141 L1160.5 137.5 Z" fill="#ffd60a"/>
+  </g>
 </svg>
