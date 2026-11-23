@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="YouTube Automation for Muse — packaging-first pipeline for any niche">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e14"/>
+      <stop offset="0.55" stop-color="#12161f"/>
+      <stop offset="1" stop-color="#1a0f14"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3b30"/>
+      <stop offset="1" stop-color="#d90429"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff0033" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff0033" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff0033" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="340" fill="url(#bg)"/>
+  <rect x="0" y="248" width="1280" height="1.5" fill="url(#fade)"/>
+
+  <!-- subtle grid dots, right side -->
+  <g fill="#ffffff" opacity="0.05">
+    <circle cx="1080" cy="60" r="3"/><circle cx="1140" cy="60" r="3"/><circle cx="1200" cy="60" r="3"/>
+    <circle cx="1080" cy="110" r="3"/><circle cx="1140" cy="110" r="3"/><circle cx="1200" cy="110" r="3"/>
+    <circle cx="1080" cy="160" r="3"/><circle cx="1140" cy="160" r="3"/><circle cx="1200" cy="160" r="3"/>
+  </g>
+
+  <!-- play button mark -->
+  <g transform="translate(84,86)">
+    <rect width="168" height="118" rx="26" fill="url(#red)"/>
+    <path d="M70 36 L112 59 L70 82 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- title -->
+  <text x="288" y="128" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="57" font-weight="700" fill="#ffffff" letter-spacing="-0.5">YouTube Automation</text>
+  <text x="288" y="182" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="600" fill="#ff4d5e">for Muse</text>
+
+  <!-- tagline -->
+  <text x="288" y="226" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" fill="#aeb6c2">Packaging-first pipeline for any niche &#8212; packaging is designed before the video exists.</text>
+
+  <!-- pipeline stages -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="600">
+    <g transform="translate(84,272)">
+      <rect width="128" height="34" rx="17" fill="none" stroke="#3a4356"/>
+      <text x="64" y="22" text-anchor="middle" fill="#dfe5ee">1 &#183; SELECT</text>
+    </g>
+    <path d="M222 288 L229 294 L222 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
+    <g transform="translate(248,272)">
+      <rect width="140" height="34" rx="17" fill="none" stroke="#3a4356"/>
+      <text x="70" y="22" text-anchor="middle" fill="#dfe5ee">2 &#183; PACKAGE</text>
+    </g>
+    <path d="M398 288 L405 294 L398 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
+    <g transform="translate(424,272)">
+      <rect width="164" height="34" rx="17" fill="none" stroke="#3a4356"/>
+      <text x="82" y="22" text-anchor="middle" fill="#dfe5ee">3 &#183; THUMBNAIL</text>
+    </g>
+    <path d="M598 288 L605 294 L598 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
+    <g transform="translate(624,272)">
+      <rect width="124" height="34" rx="17" fill="none" stroke="#3a4356"/>
+      <text x="62" y="22" text-anchor="middle" fill="#dfe5ee">4 &#183; QC GATE</text>
+    </g>
+    <path d="M758 288 L765 294 L758 300" fill="none" stroke="#5b6578" stroke-width="2" stroke-linecap="round"/>
+    <g transform="translate(784,272)">
+      <rect width="196" height="34" rx="17" fill="#ff0033"/>
+      <text x="98" y="22" text-anchor="middle" fill="#ffffff">5 &#183; YOU PUBLISH</text>
+    </g>
+  </g>
+</svg>
