@@ -1,0 +1,49 @@
+# Niche preset: satisfying / process
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: satisfying / process
+summary: Restorations, deep cleans, and processes shown end to end.
+format_lean: shorts-first
+
+winning_types:
+  - transformation
+  - before_after
+  - secret
+  - test_payoff
+  - impossible_shortcut
+reject_types:
+  - timelapse_no_payoff
+  - loop_bait
+  - unsafe_process
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: daily shorts, 1 full process per week
+
+title_style: The object plus its starting state — the worse it looks, the better the title.
+thumbnail_style: The dirtiest/worst starting frame split against the finished result.
+subscribe_line: 🔔 SUBSCRIBE for a transformation a day — oddly satisfying, honestly filmed! 🚀
+
+canonical_tags:
+  - satisfying
+  - deep clean
+  - restoration
+  - before and after
+  - process video
+hashtags:
+  - satisfying
+  - shorts
+
+sources:
+  - Your own workshop, jobs, and projects, filmed by you
+  - Client jobs filmed with written permission
+feed_method: Film the whole process locally, start to finish — the payoff frame must be earned by real footage.
+rights_note: Your process footage is yours. Factory and trade footage from brands belongs to them.
+
+cautions:
+  - No fake before/after — same item, real process
+  - Show safe chemical and tool handling
+  - Client items only with permission

@@ -43,8 +43,8 @@ if [ "$fail" -eq 0 ]; then
 else
   echo "Fix the ✗ items above, then run ./setup.sh again. Once clean:"
 fi
-echo "  1. Pick a niche — copy config/niche.example.yaml to config/<your-niche>.yaml"
-echo "     (worked examples live in config/examples/)"
+echo "  1. Pick a niche — copy a preset from config/niches/ (28 built in, see its INDEX.md)"
+echo "     to config/<your-niche>.yaml — or start custom from config/niche.example.yaml"
 echo "  2. Using Muse? Just tell your agent your niche and point it at SKILL.md."
 echo "  3. Read docs/packaging-playbook.md — it's the strategy the code enforces."
 echo "  4. Run the tests any time with:  python3 -m pytest"

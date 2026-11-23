@@ -1,0 +1,49 @@
+# Niche preset: history / stories
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: history / stories
+summary: Forgotten events, primary sources, and the detail that changes the story.
+format_lean: long-form-first
+
+winning_types:
+  - timeline_twist
+  - detail_missed
+  - myth_bust
+  - primary_source_reveal
+  - secret
+reject_types:
+  - date_list_readout
+  - legend_as_fact
+  - graphic_horror
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - long-form
+  - shorts
+cadence: 1 long-form per week, shorts cut from research
+
+title_style: The event plus the detail nobody taught — curiosity with a receipt.
+thumbnail_style: A public-domain image or your own map/graphic, the twist in 3 words.
+subscribe_line: 🔔 SUBSCRIBE for the history they skipped — a new story every week! 🚀
+
+canonical_tags:
+  - history
+  - forgotten history
+  - true stories
+  - history explained
+  - historical events
+hashtags:
+  - history
+
+sources:
+  - Public-domain archives (libraries, national archives, expired-copyright material)
+  - Your own narration, maps, and timelines built from primary sources
+  - Museums and sites you filmed with permission
+feed_method: Assemble from archive material you verified as public domain; keep the archive citation per asset.
+rights_note: Old does not automatically mean public domain — check the specific asset's status, especially photographs and restored footage.
+
+cautions:
+  - Separate documented fact from legend, on screen
+  - No graphic atrocity imagery as a hook
+  - Cite primary sources in the description

@@ -128,3 +128,24 @@ tags are never sacrificed to make room for generic ones.
 5. Compilations and longs are the AVD plays; Shorts feed them.
 6. Every upload is verified by read-back after saving — never trust
    the upload screen.
+
+## 10. Production — the pipeline makes the video
+
+Selection decides what deserves to exist; production is where it
+gets made. The rules are mechanical on purpose:
+
+- **Cut at the winner's timestamps, frame-accurately.** A clip that
+  starts two seconds late has already lost its hook.
+- **Shorts are vertical 9:16.** Blur-pad keeps the whole frame —
+  the source scaled to fit over a blurred zoom of itself. Crop only
+  when the subject is big and centred enough to survive it.
+- **Captions are burned in**, timed to the clip. Most Shorts are
+  watched on mute first; the caption is the hook's second chance.
+- **Compilations run countdown order: weakest winner first, best
+  clip last.** The ending is what gets remembered and shared.
+- **Audio stays honest.** Keep the source audio, or normalise it
+  toward -14 LUFS — never bury the moment under music it didn't
+  have.
+- **Footage is supplied, never taken.** Production works on files
+  the user owns or has rights to, sourced the way their niche
+  preset describes. Nothing is downloaded or scraped, ever.

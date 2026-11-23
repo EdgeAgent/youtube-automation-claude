@@ -1,0 +1,49 @@
+# Niche preset: live stream moments
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: live stream moments
+summary: The unscripted peak of a live broadcast — from streams you run or partner on.
+format_lean: shorts-first
+
+winning_types:
+  - reaction
+  - fail
+  - clutch_play
+  - unexpected_turn
+  - funny
+reject_types:
+  - filler_travel
+  - inside_reference
+  - donation_readout
+  - menu
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: 1-3 shorts per stream, weekly best-of compilation
+
+title_style: What happened live, phrased as the viewer's disbelief.
+thumbnail_style: The streamer's real reaction frame, the moment in 3 words.
+subscribe_line: 🔔 SUBSCRIBE for the best live moments — clipped fresh after every stream! 🚀
+
+canonical_tags:
+  - stream highlights
+  - live moments
+  - streamer clips
+  - best stream moments
+  - twitch highlights
+hashtags:
+  - streaming
+  - shorts
+
+sources:
+  - Your own streams (your VODs, your channel)
+  - Streamers who partnered with you in writing for clipping
+feed_method: Export your own VODs locally after each stream and mark peaks from chat timestamps; never pull from a third-party clip site.
+rights_note: Your VOD is yours. Another streamer's VOD is theirs, however clip-friendly their community seems — partnership in writing or nothing.
+
+cautions:
+  - Music played on stream follows you into the clip — expect claims
+  - Chat messages are people's words — blur usernames where needed
+  - No clipping minors' streams

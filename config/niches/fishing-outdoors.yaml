@@ -1,0 +1,50 @@
+# Niche preset: fishing / outdoors
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: fishing / outdoors
+summary: Catches, misses, and the spot logic behind them.
+format_lean: shorts-first
+
+winning_types:
+  - catch_payoff
+  - fail
+  - secret
+  - unexpected_turn
+  - first_time
+reject_types:
+  - filler_travel
+  - gear_haul
+  - skunked_no_story
+  - spot_burning
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3-5 shorts per week in season, 1 trip video per week
+
+title_style: The fish or the mistake — conditions and stakes up front.
+thumbnail_style: The catch at the surface, rod bent, your reaction in frame.
+subscribe_line: 🔔 SUBSCRIBE for catches, misses, and honest fishing — weekly! 🚀
+
+canonical_tags:
+  - fishing
+  - big catch
+  - fishing fails
+  - how to fish
+  - bass fishing
+hashtags:
+  - fishing
+  - outdoors
+  - shorts
+
+sources:
+  - Your own trips, your own cameras (boat, bank, kayak)
+  - Fishing partners who agreed to be filmed
+feed_method: Film locally on your own trips; log conditions with each outing for the description.
+rights_note: Your footage is yours. Tournament broadcasts and other anglers' clips are not.
+
+cautions:
+  - Follow local seasons, licences, and catch-and-release rules on camera
+  - Do not burn exact spots you were trusted with
+  - Handle fish respectfully — your audience includes wardens

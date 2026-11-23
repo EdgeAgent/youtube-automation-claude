@@ -1,0 +1,49 @@
+# Niche preset: courtroom moments
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: courtroom moments
+summary: Judge moments, testimony turns, and verdict reactions from public proceedings.
+format_lean: both
+
+winning_types:
+  - judge_moment
+  - testimony_turn
+  - verdict_reaction
+  - unexpected_turn
+  - myth_bust
+reject_types:
+  - graphic_evidence
+  - victim_testimony_clip
+  - ongoing_case_theory
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 case video per week
+
+title_style: The exchange or the ruling — the legal point is the hook.
+thumbnail_style: The courtroom frame at the reaction, the ruling in 3 words, no victim imagery.
+subscribe_line: 🔔 SUBSCRIBE for the courtroom moments everyone talks about — weekly! 🚀
+
+canonical_tags:
+  - courtroom
+  - judge moments
+  - trial highlights
+  - court cam
+  - verdict
+hashtags:
+  - courtroom
+  - law
+
+sources:
+  - Publicly streamed/recorded proceedings where recording and reuse are permitted
+  - Official court media releases and public records
+feed_method: Work only from proceedings that are public record in that jurisdiction; keep the case citation with every clip.
+rights_note: Court access rules vary by jurisdiction and judge. A stream being public does not always mean reuse is permitted — check before you cut.
+
+cautions:
+  - Blur or avoid minors and protected witnesses entirely
+  - Alleged is alleged until a verdict — say it that way
+  - No graphic evidence as a hook

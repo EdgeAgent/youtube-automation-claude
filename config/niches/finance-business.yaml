@@ -1,0 +1,50 @@
+# Niche preset: finance / business
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: finance / business
+summary: Money lessons, business breakdowns, and market explainers.
+format_lean: both
+
+winning_types:
+  - myth_bust
+  - number_reveal
+  - mistake_breakdown
+  - case_study
+  - secret
+reject_types:
+  - hype_no_substance
+  - signal_call
+  - get_rich_promise
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 long-form breakdown per week
+
+title_style: The number or the mistake up front; the lesson is the payoff.
+thumbnail_style: One big number or one stark contrast, minimal text, no fake dashboard screenshots.
+subscribe_line: 🔔 SUBSCRIBE for money lessons that respect your intelligence — weekly! 🚀
+
+canonical_tags:
+  - personal finance
+  - business breakdown
+  - money mistakes
+  - investing basics
+  - finance explained
+hashtags:
+  - finance
+  - business
+
+sources:
+  - Your own screen recordings, spreadsheets, and presentations
+  - Public filings and earnings material you analyse in your own words
+  - Your own interviews and case studies
+feed_method: Build from your own analysis files and recordings; keep source documents for every claim in the video.
+rights_note: Your analysis is yours; other creators' charts and footage are not. Never present screenshots of paid research as your own work.
+
+cautions:
+  - No financial advice — education only, and say so in the description
+  - No guaranteed-return language anywhere, ever
+  - Disclose sponsorships and positions

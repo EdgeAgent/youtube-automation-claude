@@ -1,0 +1,50 @@
+# Niche preset: DIY / builds / maker
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: DIY / builds / maker
+summary: Builds, restorations, and the step everyone gets wrong.
+format_lean: both
+
+winning_types:
+  - transformation
+  - mistake_fix
+  - secret
+  - test_payoff
+  - fail_recovery
+reject_types:
+  - materials_list_readout
+  - timelapse_no_payoff
+  - tool_ad
+  - unsafe_shortcut
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 build video per week
+
+title_style: The result or the hard step — process alone is not a title.
+thumbnail_style: Before/after split or the dramatic mid-build moment, one claim.
+subscribe_line: 🔔 SUBSCRIBE for builds and the steps nobody shows — weekly! 🚀
+
+canonical_tags:
+  - diy build
+  - woodworking
+  - before and after
+  - maker project
+  - how to build
+hashtags:
+  - diy
+  - maker
+  - shorts
+
+sources:
+  - Your own workshop, your own projects, your own filming
+  - Client builds filmed with written permission
+feed_method: Film the build as it happens; the mistake and the fix are usually the video.
+rights_note: Your build footage is yours. Other makers' project videos and plan PDFs belong to them.
+
+cautions:
+  - Show safe tool practice — guards on, glasses on
+  - No unsafe electrical or structural shortcuts
+  - Credit plans and designs you followed

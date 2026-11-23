@@ -1,0 +1,49 @@
+# Niche preset: true crime
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: true crime
+summary: Case timelines, interrogation moments, and solved-case breakdowns.
+format_lean: long-form-first
+
+winning_types:
+  - timeline_twist
+  - interrogation_moment
+  - evidence_reveal
+  - solved_payoff
+  - myth_bust
+reject_types:
+  - graphic_detail
+  - speculation_as_fact
+  - victim_family_content
+  - ongoing_case_theory
+min_ship_score: 8
+
+video_types:
+  - long-form
+  - shorts
+cadence: 1 long-form per week, shorts cut from it
+
+title_style: The unanswered question of the case — never a verdict you cannot support.
+thumbnail_style: Case-relevant real image you have rights to (location, document) — never a victim photo for shock.
+subscribe_line: 🔔 SUBSCRIBE for a new case every week — researched, sourced, respectful. 🚀
+
+canonical_tags:
+  - true crime
+  - cold case
+  - crime documentary
+  - case breakdown
+  - solved cases
+hashtags:
+  - truecrime
+
+sources:
+  - Court records and publicly released case documents
+  - Official press conferences and public police releases
+  - Your own narration, maps, and timeline graphics built from those records
+feed_method: Assemble the case file locally from records you obtained; your video is your narration and analysis over documents, not ripped documentary footage.
+rights_note: News footage and documentaries are owned by their makers. Public records are your raw material; someone else's documentary is not.
+
+cautions:
+  - Respect victims and families — no graphic detail as entertainment
+  - "Alleged is alleged: never state an unproven claim as fact"
+  - No theories about ongoing cases or living suspects beyond the public record

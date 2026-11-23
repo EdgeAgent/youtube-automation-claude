@@ -1,15 +1,18 @@
 ---
 name: youtube-automation
-description: Run a niche-agnostic YouTube clip pipeline end to end — pick only winning moments, build the full SEO pack, make thumbnails from real frames, and gate everything through QC before a human publishes. Use when the user wants to start or run a YouTube channel in any niche with this repo, choose a niche, package a video, or audit a channel's packaging. Human publishes: this skill never uploads or posts anything itself.
+description: Run a niche-agnostic YouTube pipeline end to end — pick only winning moments, actually produce the videos (cut, vertical-format, caption, assemble compilations with ffmpeg on footage the user supplies locally), build the full SEO pack, make thumbnails from real frames, and gate everything through QC before a human publishes. Use when the user wants to start or run a YouTube channel in any niche with this repo, choose a niche, produce or package a video, or audit a channel's packaging. Human publishes: this skill never uploads or posts anything itself, and never downloads anyone's footage.
 ---
 
 # YouTube Automation for Muse
 
-You are operating a packaging-first YouTube pipeline. The system in one
-line: **videos rarely fail because they are bad — they fail because
-nobody clicked, or clicked and left.** Packaging (title, thumbnail,
-first seconds) is designed BEFORE the video is finished, and only
-moments with a proven outlier pattern get made at all.
+You are operating a YouTube pipeline that **makes the videos and
+packages them**. The system in one line: **videos rarely fail because
+they are bad — they fail because nobody clicked, or clicked and
+left.** Packaging (title, thumbnail, first seconds) is designed
+BEFORE the video is finished, only moments with a proven outlier
+pattern get made at all — and then the pipeline actually makes them:
+cutting, formatting, captioning, and assembling the finished files
+with ffmpeg.
 
 Read `docs/packaging-playbook.md` before your first run. It is the
 strategy; this file is the procedure.
@@ -18,14 +21,21 @@ strategy; this file is the procedure.
 
 1. Run `./setup.sh` (or check manually): Python 3.10+, Pillow, and
    ffmpeg must exist. Report what is missing instead of guessing.
-2. Ask the user ONE question: **what niche?** If they are unsure, show
-   the three worked examples in `config/examples/` (gaming clips,
-   bodycam/public footage, faceless facts) as starting points.
-3. Generate their config: copy `config/niche.example.yaml` to
-   `config/<their-niche>.yaml` and fill it in WITH the user — winning
+2. Ask the user ONE question: **what niche?** Show them the built-in
+   library — 28 presets in `config/niches/` (index:
+   `config/niches/INDEX.md`; list them with
+   `pipeline.niches.list_niches()`). If they are unsure, the three
+   worked examples in `config/examples/` (gaming clips, bodycam/public
+   footage, faceless facts) are the deep-dives to study.
+3. Generate their config: copy the chosen preset (or
+   `config/niche.example.yaml` for a custom niche) to
+   `config/<their-niche>.yaml` and tune it WITH the user — winning
    types, reject list, cadence, subscribe line, and a canonical tag set
    built from the top videos in their niche (study 10–20 of them; do
-   not invent tags from thin air).
+   not invent tags from thin air). Read the preset's `sources`,
+   `rights_note`, and `cautions` fields with the user before the first
+   run — they define where this niche's footage legitimately comes
+   from.
 4. Confirm the user has: a YouTube channel, and footage they own or
    have the rights to use. If either is missing, stop and say so.
 
@@ -45,8 +55,30 @@ Ship only at the config's `min_ship_score` (default 8). Categories on
 the reject list are hard-rejected at any score. **An empty slot beats
 a weak video — never pad a run.**
 
-### 2. Package — `pipeline/seo.py`
-Build the metadata pack with `build_pack` BEFORE cutting the video:
+### 2. Produce — `pipeline/produce.py`
+Make the actual videos from the footage the user supplies locally.
+Write a produce job (see `config/produce.example.json`): the source
+file, the winning moments with their timestamps and scores, format,
+and loudness. Then:
+
+```bash
+python3 -m pipeline.produce shorts config/<job>.json        # one Short per moment
+python3 -m pipeline.produce compilation config/<job>.json   # one long video, best clip last
+```
+
+Production covers: frame-accurate cutting at the selected
+timestamps, vertical 9:16 formatting for Shorts (blur-pad by
+default, crop if the niche preset says so), burned captions from an
+SRT (a source-timed SRT is sliced and re-timed automatically),
+compilation assembly in countdown order — weakest winner first,
+**best clip last** — and source audio kept as-is (`keep`) or
+loudness-normalised (`safe`). Produce NEVER downloads footage and
+never uploads anything; if the footage isn't already on the user's
+machine with rights cleared (check the preset's `sources` and
+`rights_note`), stop.
+
+### 3. Package — `pipeline/seo.py`
+Build the metadata pack with `build_pack` for each produced video:
 
 - **Title**: curiosity up front, resolution withheld. If the title
   isn't clickable, the moment is wrong — go back to step 1.
@@ -56,19 +88,19 @@ Build the metadata pack with `build_pack` BEFORE cutting the video:
 - **Tags**: video-specific tags first, then the niche canonical set,
   filled to ~490–500 characters, trimming generics from the end only.
 
-### 3. Thumbnail — `pipeline/thumbnail.py`
+### 4. Thumbnail — `pipeline/thumbnail.py`
 Extract the rawest REAL frame from the finished video
 (`extract_frame`) and treat it with `build_thumbnail`: saturated grade,
 big display text (2–4 words, not a repeat of the title), heavy outline.
 No AI-generated key art, no stock. The frame is a promise the video
 must keep.
 
-### 4. QC gate — `pipeline/qc.py`
+### 5. QC gate — `pipeline/qc.py`
 Run `run_qc` on the score, the pack, and the thumbnail. **Every check
 must pass.** A failure means fix the item or drop it — there is no
 override, and you never report a failed item as ready.
 
-### 5. Publish — HUMAN STEP
+### 6. Publish — HUMAN STEP
 Uploading happens in YouTube Studio, by the user (or with the user
 watching). Paste the pack, set the thumbnail, set the playlist, then
 READ BACK the saved fields and confirm they match the pack before
@@ -88,6 +120,10 @@ falls short; verify by read-back.
   sources in every description. Reused-content and copyright rules are
   YouTube's, and they can end a channel — say so plainly when a plan
   leans on other people's footage.
+- **No downloading**: the produce stage works only on files already
+  on the user's machine, sourced the way their niche preset's
+  `sources` field describes. Never fetch, rip, or scrape footage
+  from any platform.
 - **Safety edits**: in niches involving real people (e.g. bodycam),
   blur bystanders' faces, licence plates, and minors before publish.
 - **No guarantees**: this pipeline applies patterns that correlate

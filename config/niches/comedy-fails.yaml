@@ -1,0 +1,50 @@
+# Niche preset: comedy / fails
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: comedy / fails
+summary: Harmless fails, bloopers, and perfect-timing comedy.
+format_lean: shorts-first
+
+winning_types:
+  - fail
+  - funny
+  - unexpected_turn
+  - perfect_timing
+  - reaction
+reject_types:
+  - staged_sketch
+  - cruel_prank
+  - injury
+  - humiliation
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: daily shorts, 1 fail compilation per week
+
+title_style: Set up the expectation the clip is about to break.
+thumbnail_style: The frame a half-second before it goes wrong — tension, not impact.
+subscribe_line: 🔔 SUBSCRIBE for a daily laugh — new fails every single day! 🚀
+
+canonical_tags:
+  - funny fails
+  - fail compilation
+  - funny moments
+  - try not to laugh
+  - bloopers
+hashtags:
+  - funny
+  - fails
+  - shorts
+
+sources:
+  - Your own and your community's submitted clips (with a signed submission release)
+  - Licensed viral-clip libraries
+feed_method: Collect submissions through a form that includes a usage release; keep the release on file for every clip you publish.
+rights_note: A clip being viral does not make it free. The original filmer owns it — submission release or licence, every time.
+
+cautions:
+  - No injuries played for laughs
+  - No clips of children in distress
+  - No humiliation content — the subject is the moment, not the person

@@ -1,0 +1,49 @@
+# Niche preset: news explainers
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: news explainers
+summary: What happened, why it matters, in under a minute.
+format_lean: shorts-first
+
+winning_types:
+  - myth_bust
+  - number_reveal
+  - timeline_twist
+  - what_changes_for_you
+  - secret
+reject_types:
+  - headline_readout
+  - opinion_rant
+  - unverified_claim
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: daily shorts while the story is live, weekly deep-dives
+
+title_style: The consequence for the viewer, not the headline rewritten.
+thumbnail_style: One stark number or contrast from the story, your own graphic — never a ripped news still.
+subscribe_line: 🔔 SUBSCRIBE for the news explained plainly — what it means for you! 🚀
+
+canonical_tags:
+  - news explained
+  - explainer
+  - what happened
+  - current events
+  - news breakdown
+hashtags:
+  - news
+  - explained
+
+sources:
+  - Your own narration and graphics built from primary sources (official statements, data, filings)
+  - Wire/public-domain material where the licence allows
+feed_method: Write from primary sources locally; keep the source list for every video in the description.
+rights_note: News footage belongs to the outlet that shot it. Your explainer must be your words and your graphics over facts, not their pictures.
+
+cautions:
+  - Verify before you publish — speed never beats accuracy
+  - Label opinion as opinion
+  - Date-stamp fast-moving stories in the description

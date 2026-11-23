@@ -1,0 +1,49 @@
+# Niche preset: sports highlights
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: sports highlights
+summary: Impossible plays, buzzer beaters, and comebacks.
+format_lean: shorts-first
+
+winning_types:
+  - impossible_play
+  - buzzer_beater
+  - comeback
+  - record_moment
+  - funny
+reject_types:
+  - full_match_replay
+  - talking_head_segment
+  - scoreboard_only
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: daily shorts during the season, weekly compilations
+
+title_style: The situation and the stakes — never the final score.
+thumbnail_style: "Peak-action frame: the shot in the air, the dive, the catch — ball visible, outcome hidden."
+subscribe_line: 🔔 SUBSCRIBE for daily sports moments — the plays everyone will be talking about! 🚀
+
+canonical_tags:
+  - sports highlights
+  - best plays
+  - buzzer beater
+  - top plays
+  - sports moments
+hashtags:
+  - sports
+  - shorts
+
+sources:
+  - Your own recordings from events you filmed
+  - Leagues/teams whose media terms grant you a clip licence
+  - Licensed sports footage libraries
+feed_method: Export your recordings or licensed clips locally; log the event, date, and licence for each source file.
+rights_note: Broadcast footage belongs to the league/network. Highlights are the most-claimed category on YouTube — use only footage you filmed or licensed.
+
+cautions:
+  - Expect Content ID claims on any broadcast material — do not build on footage you cannot clear
+  - Score bugs and network graphics do not make a clip yours

@@ -1,0 +1,47 @@
+# Niche preset: podcast clips
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: podcast clips
+summary: The sharpest 60 seconds from long conversations.
+format_lean: shorts-first
+
+winning_types:
+  - hot_take
+  - story_payoff
+  - funny
+  - confession
+  - argument_peak
+reject_types:
+  - small_talk
+  - ad_read
+  - intro_outro
+  - inside_reference
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: 1 short per episode minimum, daily if the catalogue allows
+
+title_style: The claim or the question, sharpened — never a summary of the episode.
+thumbnail_style: Guest's most expressive real frame, the claim in 3-5 words.
+subscribe_line: 🔔 SUBSCRIBE for the best podcast moments daily — full episodes linked below! 🚀
+
+canonical_tags:
+  - podcast clips
+  - podcast highlights
+  - best podcast moments
+  - podcast shorts
+hashtags:
+  - podcast
+  - shorts
+
+sources:
+  - Your own podcast's episode files
+  - Shows that granted you a written clipping licence
+feed_method: Pull the episode master file locally, mark the peak moments while you listen, cut from the master — never from a ripped upload.
+rights_note: Clipping someone else's show without a licence is the fastest way to a strike, however common the practice looks.
+
+cautions:
+  - Get the licence in writing before the first clip, not after a video pops
+  - Link the full episode in every description

@@ -1,0 +1,50 @@
+# Niche preset: kids / family
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: kids / family
+summary: Family moments, kid logic, and parenting wins (and fails).
+format_lean: shorts-first
+
+winning_types:
+  - funny
+  - first_time
+  - unexpected_turn
+  - reaction
+  - transformation
+reject_types:
+  - meltdown_content
+  - embarrassing_moment
+  - bath_or_swimwear
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: 3 shorts per week, gentle and sustainable
+
+title_style: The kid's logic or the parent's dilemma, in their words where possible.
+thumbnail_style: The genuine reaction frame — joy and surprise, never distress.
+subscribe_line: 🔔 SUBSCRIBE for family moments that feel like yours — weekly! 🚀
+
+canonical_tags:
+  - family moments
+  - funny kids
+  - parenting
+  - family life
+  - kid logic
+hashtags:
+  - family
+  - parenting
+  - shorts
+
+sources:
+  - Your own family's footage, filmed by you
+  - Nothing else — this niche runs on your own recordings only
+feed_method: Film everyday moments locally; review every clip as the adult your child will become before it ships.
+rights_note: You own your footage, but your children own their dignity. Consent you can get today is not consent forever — keep a delete-on-request promise and honour it.
+
+cautions:
+  - Never distress, embarrassment, bath, or swimwear content
+  - No location or school identifiers, ever
+  - Follow YouTube's child-safety and made-for-kids rules exactly

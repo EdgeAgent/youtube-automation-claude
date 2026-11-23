@@ -1,0 +1,51 @@
+# Niche preset: animals / pets
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: animals / pets
+summary: Rescues, reunions, and animals being unexpectedly brilliant.
+format_lean: shorts-first
+
+winning_types:
+  - rescue_payoff
+  - reunion
+  - funny
+  - unlikely_friendship
+  - secret
+reject_types:
+  - distress_no_payoff
+  - staged_cruelty
+  - exotic_pet_haul
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: daily shorts, weekly compilations
+
+title_style: The bond or the surprise, in plain words.
+thumbnail_style: The animal's face at the emotional peak — eye contact with camera wins.
+subscribe_line: 🔔 SUBSCRIBE for daily animal moments that fix your whole day! 🚀
+
+canonical_tags:
+  - funny animals
+  - animal rescue
+  - cute pets
+  - dog moments
+  - cat moments
+hashtags:
+  - animals
+  - pets
+  - shorts
+
+sources:
+  - Your own pets and your own filming
+  - Shelter/rescue partners who film with you or license you their clips
+  - Community submissions with a signed release
+feed_method: Film locally or collect partner footage with releases on file; log the animal and owner for every clip.
+rights_note: Wildlife and shelter footage belongs to whoever filmed it. Partner or get a release — cuteness is not a licence.
+
+cautions:
+  - Never stage distress or withhold food/care for a shot
+  - No wildlife harassment — film from a respectful distance
+  - Credit shelters and link their adoption pages

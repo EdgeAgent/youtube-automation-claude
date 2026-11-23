@@ -61,31 +61,35 @@
   <!-- pipeline stages, bigger -->
   <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700">
     <g transform="translate(72,288)">
-      <rect width="150" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
-      <text x="75" y="28" text-anchor="middle" fill="#ffffff">1 &#183; SELECT</text>
+      <rect width="132" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="66" y="28" text-anchor="middle" fill="#ffffff">1 &#183; SELECT</text>
     </g>
-    <path d="M234 302 L243 309 L234 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
-    <g transform="translate(256,288)">
-      <rect width="164" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
-      <text x="82" y="28" text-anchor="middle" fill="#ffffff">2 &#183; PACKAGE</text>
+    <path d="M206 302 L215 309 L206 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(220,288)">
+      <rect width="148" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="74" y="28" text-anchor="middle" fill="#ffffff">2 &#183; PRODUCE</text>
     </g>
-    <path d="M432 302 L441 309 L432 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
-    <g transform="translate(454,288)">
-      <rect width="188" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
-      <text x="94" y="28" text-anchor="middle" fill="#ffffff">3 &#183; THUMBNAIL</text>
+    <path d="M370 302 L379 309 L370 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(384,288)">
+      <rect width="148" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="74" y="28" text-anchor="middle" fill="#ffffff">3 &#183; PACKAGE</text>
     </g>
-    <path d="M654 302 L663 309 L654 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
-    <g transform="translate(676,288)">
-      <rect width="150" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
-      <text x="75" y="28" text-anchor="middle" fill="#ffffff">4 &#183; QC GATE</text>
+    <path d="M534 302 L543 309 L534 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(548,288)">
+      <rect width="176" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="88" y="28" text-anchor="middle" fill="#ffffff">4 &#183; THUMBNAIL</text>
     </g>
-    <path d="M838 302 L847 309 L838 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
-    <g transform="translate(860,288)">
-      <rect width="228" height="42" rx="21" fill="#ff0033"/>
-      <text x="114" y="28" text-anchor="middle" fill="#ffffff">5 &#183; YOU PUBLISH</text>
+    <path d="M726 302 L735 309 L726 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(740,288)">
+      <rect width="132" height="42" rx="21" fill="none" stroke="#4a5468" stroke-width="1.5"/>
+      <text x="66" y="28" text-anchor="middle" fill="#ffffff">5 &#183; QC GATE</text>
+    </g>
+    <path d="M874 302 L883 309 L874 316" fill="none" stroke="#ff7a18" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(888,288)">
+      <rect width="192" height="42" rx="21" fill="#ff0033"/>
+      <text x="96" y="28" text-anchor="middle" fill="#ffffff">6 &#183; YOU PUBLISH</text>
     </g>
   </g>
-
   <!-- Claude mascot perched on a play button, bottom right -->
   <g transform="translate(0,74)">
     <!-- play button -->

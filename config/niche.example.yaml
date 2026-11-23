@@ -1,7 +1,14 @@
 # ─── Niche config template ───────────────────────────────────────────────
 # Copy this file, rename it for your niche (e.g. config/my-niche.yaml),
 # and fill in every field. The pipeline reads these values at every stage.
+# FAST PATH: 28 ready-made presets live in config/niches/ (index:
+# config/niches/INDEX.md) — copy one of those instead and just tune it.
 # Three worked examples live in config/examples/.
+# Presets also carry title_style, thumbnail_style, sources (where this
+# niche's footage legitimately comes from), feed_method, rights_note,
+# and cautions — add the same fields here for a custom niche.
+# Making videos: production runs off a job file, not this config —
+# see config/produce.example.json.
 
 # Your niche, in a few words. Used in titles and reports.
 niche: my niche name

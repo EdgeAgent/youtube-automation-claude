@@ -1,0 +1,51 @@
+# Niche preset: music performances
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: music performances
+summary: Live moments, covers, and the note nobody expected.
+format_lean: shorts-first
+
+winning_types:
+  - impossible_note
+  - crowd_reaction
+  - first_take
+  - fail_recovery
+  - secret
+reject_types:
+  - full_song_reupload
+  - lyric_video_only
+  - static_audio
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: daily shorts, weekly compilations
+
+title_style: The moment in the performance, not the song title alone.
+thumbnail_style: The singer's face at the peak note — emotion over staging.
+subscribe_line: 🔔 SUBSCRIBE for a live moment a day — the notes that give you chills! 🚀
+
+canonical_tags:
+  - live performance
+  - best covers
+  - vocal moments
+  - live music
+  - singing highlights
+hashtags:
+  - music
+  - live
+  - shorts
+
+sources:
+  - Your own performances and your own recordings
+  - Artists who licensed you their live footage
+  - Public-domain and openly licensed recordings
+feed_method: Record your own sets locally; for licensed artists keep the licence with the project files.
+rights_note: A song has two copyrights (writing and recording) and a live video adds a third. Your performance of your song is the clean path.
+
+cautions:
+  - Covers need the composition licence for monetisation — expect claims
+  - No full-song re-uploads of other artists
+  - Credit songwriters in every description

@@ -1,0 +1,49 @@
+# Niche preset: tech reviews / gadgets
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: tech reviews / gadgets
+summary: Real tests, honest flaws, and comparisons that pick a winner.
+format_lean: both
+
+winning_types:
+  - test_payoff
+  - flaw_reveal
+  - myth_bust
+  - comparison_verdict
+  - secret
+reject_types:
+  - specs_readout
+  - unboxing_no_testing
+  - sponsored_praise_only
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 full review per week
+
+title_style: The verdict-shaped question — what the test will settle.
+thumbnail_style: The product mid-test at its most dramatic, the claim in 3 words.
+subscribe_line: 🔔 SUBSCRIBE for reviews that test, not recite — new gear weekly! 🚀
+
+canonical_tags:
+  - tech review
+  - gadget test
+  - honest review
+  - tech comparison
+  - buying guide
+hashtags:
+  - tech
+  - gadgets
+
+sources:
+  - Products you bought or were sent, filmed and tested by you
+  - Your own benchmarks, photos, and screen recordings
+feed_method: Film your own tests locally; keep receipts and test notes for every claim.
+rights_note: Your testing is yours. Manufacturer B-roll and press renders are licensed material — use sparingly and credit, or shoot your own.
+
+cautions:
+  - Disclose review units and sponsorships in the video and description
+  - No benchmark claims you did not run
+  - Embargoes are real — check before publishing early units

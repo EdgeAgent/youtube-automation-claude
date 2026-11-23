@@ -1,0 +1,49 @@
+# Niche preset: cars / automotive
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: cars / automotive
+summary: Builds, saves, sound checks, and garage problem-solving.
+format_lean: both
+
+winning_types:
+  - first_start
+  - before_after
+  - sound_reveal
+  - fix_payoff
+  - fail
+reject_types:
+  - walkaround_no_payoff
+  - specs_readout
+  - dealer_promo
+  - street_racing
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 build episode per week
+
+title_style: The problem or the transformation — the result stays hidden.
+thumbnail_style: The car at its worst or its loudest moment, one bold claim in 3 words.
+subscribe_line: 🔔 SUBSCRIBE for builds, saves, and first starts — new garage videos weekly! 🚀
+
+canonical_tags:
+  - car build
+  - barn find
+  - first start
+  - car restoration
+  - engine sound
+hashtags:
+  - cars
+  - shorts
+
+sources:
+  - Your own garage, your own cars, your own filming
+  - Customer cars filmed with the owner's written OK
+feed_method: Film the work as you do it; the build log and timestamps come from your own footage folder.
+rights_note: Your footage of your work is yours. Manufacturer ads, other channels' dyno runs, and event broadcasts are not.
+
+cautions:
+  - No street racing or reckless driving content
+  - Film customer cars only with permission
+  - Safety gear on camera — your audience copies you

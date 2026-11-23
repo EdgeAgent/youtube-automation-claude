@@ -1,0 +1,49 @@
+# Niche preset: gaming highlights
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: gaming highlights
+summary: Clutch plays, fails, and reactions from gameplay footage.
+format_lean: shorts-first
+
+winning_types:
+  - fail
+  - funny
+  - reaction
+  - secret
+  - clutch_play
+reject_types:
+  - menu
+  - shopping
+  - inventory
+  - filler_travel
+  - cutscene_no_payoff
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: 3-5 shorts per week, 1 compilation per month
+
+title_style: Curiosity gap, outcome withheld — name the situation, never the result.
+thumbnail_style: Rawest real frame of the peak moment, 2-4 words of display text, heavy outline.
+subscribe_line: 🔔 SUBSCRIBE for daily gaming clips — new moments every single day! 🚀
+
+canonical_tags:
+  - gaming highlights
+  - funny gaming moments
+  - gaming fails
+  - clutch plays
+  - best gaming moments
+hashtags:
+  - gaming
+  - shorts
+
+sources:
+  - Your own gameplay captures (console/PC recording, OBS, capture card)
+  - Partnered creators who gave you written permission to clip their footage
+feed_method: Record or export gameplay locally, drop the files in your footage folder, and list candidate moments with timestamps.
+rights_note: Only your own captures or footage you have written permission to use. A streamer being public does not make their VOD yours.
+
+cautions:
+  - No downloaded VODs or ripped streams without permission
+  - Credit partnered creators in every description

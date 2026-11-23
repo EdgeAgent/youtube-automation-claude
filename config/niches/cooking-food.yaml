@@ -1,0 +1,50 @@
+# Niche preset: cooking / food
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: cooking / food
+summary: Transformations, one-pan saves, and recipes with a twist.
+format_lean: shorts-first
+
+winning_types:
+  - transformation
+  - secret
+  - mistake_fix
+  - reaction
+  - impossible_shortcut
+reject_types:
+  - ingredient_list_readout
+  - slow_prep_no_payoff
+  - restaurant_ad
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: daily shorts, 1 full recipe video per week
+
+title_style: The twist or the result teased — never just the dish name.
+thumbnail_style: The finished dish at its most dramatic angle, steam and height, 2-3 word claim.
+subscribe_line: 🔔 SUBSCRIBE for a new recipe shortcut every day! 🚀
+
+canonical_tags:
+  - easy recipes
+  - cooking hacks
+  - one pan recipes
+  - food transformation
+  - quick meals
+hashtags:
+  - cooking
+  - food
+  - shorts
+
+sources:
+  - Your own kitchen, your own cooking, your own filming
+  - Restaurant kitchens that invited you to film
+feed_method: Film every cook locally; note the exact moment the transformation lands for the cut.
+rights_note: Your cooking is yours. Clips from TV cooking shows and other creators' recipes videos are not yours to re-cut.
+
+cautions:
+  - Show safe food handling — your audience cooks along
+  - List allergens in the description for recipe videos
+  - No dangerous stunt cooking

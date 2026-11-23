@@ -1,0 +1,49 @@
+# Niche preset: travel / adventure
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: travel / adventure
+summary: Hidden places, travel mistakes, and moments the brochure skipped.
+format_lean: both
+
+winning_types:
+  - hidden_place
+  - mistake_fix
+  - unexpected_turn
+  - secret
+  - transformation
+reject_types:
+  - filler_travel
+  - hotel_tour_no_payoff
+  - postcard_montage
+  - luxury_flex
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 destination video per week
+
+title_style: The place plus the catch — what nobody tells you about it.
+thumbnail_style: You in the place at its most dramatic, one honest claim, no stock postcard shots.
+subscribe_line: 🔔 SUBSCRIBE for the places and the fine print — new trips weekly! 🚀
+
+canonical_tags:
+  - travel tips
+  - hidden places
+  - travel mistakes
+  - travel guide
+  - budget travel
+hashtags:
+  - travel
+  - shorts
+
+sources:
+  - Your own trips, your own filming
+  - Tour partners who invited you and agreed to filming
+feed_method: Film on location yourself; keep permits and location permissions with the footage.
+rights_note: Your footage is yours. Drone shots, hotel promo films, and other travellers' clips are not.
+
+cautions:
+  - Respect local filming and drone rules — permits are your job
+  - No trespassing for a shot
+  - Be honest about sponsorships and hosted stays

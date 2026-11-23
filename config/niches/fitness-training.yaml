@@ -1,0 +1,50 @@
+# Niche preset: fitness / training
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: fitness / training
+summary: Form fixes, transformations, and training mistakes corrected.
+format_lean: shorts-first
+
+winning_types:
+  - form_fix
+  - mistake_breakdown
+  - transformation
+  - myth_bust
+  - challenge_payoff
+reject_types:
+  - flex_no_value
+  - supplement_ad
+  - dangerous_stunt
+  - body_shaming
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: daily shorts, 1 full workout per week
+
+title_style: The mistake or the fix — one specific claim per video.
+thumbnail_style: The wrong-vs-right frame or the transformation peak, one short correction phrase.
+subscribe_line: 🔔 SUBSCRIBE for a form fix a day — train smarter, not just harder! 🚀
+
+canonical_tags:
+  - form check
+  - workout mistakes
+  - fitness tips
+  - gym form
+  - training advice
+hashtags:
+  - fitness
+  - gym
+  - shorts
+
+sources:
+  - Your own training footage and your own clients (with written consent)
+  - Your own demonstrations filmed for the channel
+feed_method: Film sessions locally with consent forms on file; mark the rep where the form breaks or clicks.
+rights_note: Your footage of consenting adults is yours. Other coaches' videos and gym members in the background are not content you own.
+
+cautions:
+  - Consent for anyone identifiable on camera
+  - No medical claims — refer out for pain and injury
+  - No shaming bodies, including your own before photos

@@ -1,0 +1,49 @@
+# Niche preset: movie / TV moments
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: movie / TV moments
+summary: Scene breakdowns, details you missed, and ending explainers.
+format_lean: both
+
+winning_types:
+  - detail_missed
+  - ending_explained
+  - myth_bust
+  - theory_payoff
+  - reaction
+reject_types:
+  - full_scene_reupload
+  - plot_summary_no_insight
+  - trailer_reaction_only
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 breakdown per week
+
+title_style: The detail or the question — the analysis is the product.
+thumbnail_style: Your own graphic or a transformative edit (zoom, annotation) — the insight in 3 words.
+subscribe_line: 🔔 SUBSCRIBE for the details you missed — new breakdowns weekly! 🚀
+
+canonical_tags:
+  - ending explained
+  - details you missed
+  - movie breakdown
+  - easter eggs
+  - scene analysis
+hashtags:
+  - movies
+  - shorts
+
+sources:
+  - Short clips used for commentary/criticism under your own narration and analysis
+  - Trailers and press-kit material released for coverage
+feed_method: Work from your own copies of the work; keep clips as short as the commentary needs and keep your analysis on screen throughout.
+rights_note: Studio footage is heavily protected. Commentary and criticism give you arguments, not ownership — keep clips brief, purposeful, and clearly transformative.
+
+cautions:
+  - Never re-upload scenes as-is, however short the channel's other videos look
+  - Spoiler warnings in title or first line for new releases
+  - Expect claims; design every video to survive a fair-use review

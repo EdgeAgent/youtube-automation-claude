@@ -1,0 +1,49 @@
+# Niche preset: real estate / property
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: real estate / property
+summary: Tours with a twist, price reveals, and renovation payoffs.
+format_lean: shorts-first
+
+winning_types:
+  - price_reveal
+  - transformation
+  - hidden_feature
+  - mistake_breakdown
+  - secret
+reject_types:
+  - plain_walkthrough
+  - listing_ad_readout
+  - filler_travel
+  - fake_sold_claims
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+cadence: 3 shorts per week, 1 full tour per week
+
+title_style: The price question or the hidden catch — a plain tour title dies.
+thumbnail_style: The most dramatic room or the before/after, price teased not shown in full.
+subscribe_line: 🔔 SUBSCRIBE for homes with a story — prices, catches, and payoffs weekly! 🚀
+
+canonical_tags:
+  - house tour
+  - real estate
+  - property tour
+  - home renovation
+  - price reveal
+hashtags:
+  - realestate
+  - shorts
+
+sources:
+  - Properties you list, own, or were invited to film
+  - Renovations you performed, filmed by you
+feed_method: Film on site with the owner/agent's written OK; keep the permission with the listing files.
+rights_note: A listing being public does not license its photos or video. Film it yourself with permission, or do not use it.
+
+cautions:
+  - Never show exact addresses of occupied homes
+  - Price and sold claims must be verifiable
+  - Disclose when a tour is sponsored by the seller or agent

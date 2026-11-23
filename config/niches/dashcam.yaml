@@ -1,0 +1,50 @@
+# Niche preset: dashcam moments
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: dashcam moments
+summary: Close calls, instant karma, and lessons from the road.
+format_lean: shorts-first
+
+winning_types:
+  - close_call
+  - instant_karma
+  - unexpected_turn
+  - fail
+  - good_driver_save
+reject_types:
+  - uneventful_driving
+  - road_rage_revenge
+  - crash_graphic
+  - filler_travel
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - compilations
+cadence: daily shorts, weekly karma compilations
+
+title_style: The situation in one line — what almost happened.
+thumbnail_style: The frame a second before the moment, arrows only if they clarify.
+subscribe_line: 🔔 SUBSCRIBE for a close call a day — drive safe out there! 🚀
+
+canonical_tags:
+  - dashcam
+  - close call
+  - instant karma
+  - dashcam footage
+  - driving fails
+hashtags:
+  - dashcam
+  - shorts
+
+sources:
+  - Your own dashcam footage
+  - Viewer submissions with a signed release
+  - Licensed dashcam libraries
+feed_method: Export from your own camera or collect submissions with releases; keep date/location notes per clip.
+rights_note: The driver who filmed it owns it. A submission form without a release is not permission.
+
+cautions:
+  - Blur plates and faces
+  - No graphic crashes
+  - No doxxing drivers — the lesson is the content, not the person

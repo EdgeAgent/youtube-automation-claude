@@ -1,0 +1,51 @@
+# Niche preset: bodycam / police footage
+# Pick it at setup; the pipeline reads these values at every stage.
+
+niche: bodycam / police footage
+summary: Chases, takedowns, and K9 tracks from publicly released bodycam footage.
+format_lean: both
+
+winning_types:
+  - chase
+  - takedown
+  - k9_track
+  - standoff_resolution
+  - unexpected_turn
+reject_types:
+  - routine_stop
+  - paperwork
+  - long_idle
+  - graphic_injury
+min_ship_score: 8
+
+video_types:
+  - shorts
+  - long-form
+  - compilations
+cadence: 3 shorts per week, 1 long-form per week
+
+title_style: Name the situation and the stakes; withhold how it ends.
+thumbnail_style: Real frame at the climax — the grab, the sprint, the door opening — never the aftermath.
+subscribe_line: 🔔 SUBSCRIBE for daily bodycam breakdowns — new footage every day! 🚀
+
+canonical_tags:
+  - bodycam
+  - police bodycam
+  - police chase
+  - bodycam footage
+  - k9 unit
+hashtags:
+  - bodycam
+  - police
+  - shorts
+
+sources:
+  - Official police department YouTube/social channels that publish bodycam releases
+  - Public-records (FOIA) releases obtained through proper request channels
+feed_method: Download only footage officially released for public viewing, save it locally, and log the agency and release source for the description credit.
+rights_note: "Publicly released footage only. Public release is not a free-for-all: transform it with your own narration/value and credit the agency."
+
+cautions:
+  - Blur bystanders' faces, licence plates, and minors before publish
+  - No graphic injury or death as entertainment
+  - Keep the source credit and release context in every description
